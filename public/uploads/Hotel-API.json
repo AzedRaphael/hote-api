@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "971f54b3-00d4-4d5a-87b8-a7ad818d49fb",
+		"name": "Hotel API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23940543"
+	},
+	"item": [
+		{
+			"name": "CREATE HOTEL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": "/C:/Users/pc/Desktop/WORK FILES/interview/server/public/uploads/hyatt2.jpg"
+						},
+						{
+							"key": "hname",
+							"value": "hyatt huntsville/research park",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "US",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "alabama",
+							"type": "text"
+						},
+						{
+							"key": "group",
+							"value": "hyatt",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "6860 governors W,huntsville,AL 35806",
+							"type": "text"
+						},
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "hname",
+							"value": "test7",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/property/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"property",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE HOTEL",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productImage",
+									"type": "file",
+									"src": "/C:/Users/pc/Desktop/WORK FILES/interview/server/public/uploads/hyatt2.jpg"
+								},
+								{
+									"key": "hname",
+									"value": "hyatt huntsville/research park",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "US",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "alabama",
+									"type": "text"
+								},
+								{
+									"key": "group",
+									"value": "hyatt",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "6860 governors W,huntsville,AL 35806",
+									"type": "text"
+								},
+								{
+									"key": "productImage",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "hname",
+									"value": "test7",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/api/v1/property/",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"property",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "316"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13c-qIUR0FBlEYhH+OpsFuo3387/qco\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Oct 2022 09:22:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"hname\": \"hyatt huntsville/research park\",\n    \"address\": \"6860 governors W,huntsville,AL 35806\",\n    \"city\": \"alabama\",\n    \"group\": \"hyatt\",\n    \"country\": \"US\",\n    \"productImage\": \"http://localhost:4000/uploads/hyatt2.jpg\",\n    \"_id\": \"63565953cf37651dd8c3c27c\",\n    \"createdAt\": \"2022-10-24T09:22:27.788Z\",\n    \"updatedAt\": \"2022-10-24T09:22:27.788Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "GET SINGLE PROPERTY",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/property/63565953cf37651dd8c3c27c",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"property",
+						"63565953cf37651dd8c3c27c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET SINGLE PROPERTY",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"6355a96a7adc008eb9a9d9a8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/v1/property/63565953cf37651dd8c3c27c",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"property",
+								"63565953cf37651dd8c3c27c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "329"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"149-u+atOWYflhXQqo09gIGczMGhFmo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Oct 2022 09:23:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"property\": {\n        \"_id\": \"63565953cf37651dd8c3c27c\",\n        \"hname\": \"hyatt huntsville/research park\",\n        \"address\": \"6860 governors W,huntsville,AL 35806\",\n        \"city\": \"alabama\",\n        \"group\": \"hyatt\",\n        \"country\": \"US\",\n        \"productImage\": \"http://localhost:4000/uploads/hyatt2.jpg\",\n        \"createdAt\": \"2022-10-24T09:22:27.788Z\",\n        \"updatedAt\": \"2022-10-24T09:22:27.788Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE PROPERTY",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/v1/property/6354f51fb1245f80f2d1a457",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"property",
+						"6354f51fb1245f80f2d1a457"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE PROPERTY",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/v1/property/6354f51fb1245f80f2d1a457",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"property",
+								"6354f51fb1245f80f2d1a457"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-+1mZhu0A18rLw3Ms9K8LXw/kwgY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Oct 2022 00:01:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"property removed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE PROPERTY",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": "/C:/Users/pc/Desktop/WORK FILES/interview/server/public/uploads/hyatt4.jpg"
+						},
+						{
+							"key": "hname",
+							"value": "testupdate1",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "group",
+							"value": "group",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/property/6356568ecf37651dd8c3c25e",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"property",
+						"6356568ecf37651dd8c3c25e"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE PROPERTY",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productImage",
+									"type": "file",
+									"src": "/C:/Users/pc/Desktop/WORK FILES/interview/server/public/uploads/hyatt4.jpg"
+								},
+								{
+									"key": "hname",
+									"value": "testupdate1",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "group",
+									"value": "group",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/v1/property/6356568ecf37651dd8c3c25e",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"property",
+								"6356568ecf37651dd8c3c25e"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "329"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"149-U9OoTdlOSI3z6ckWB7WzS9llTBQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Oct 2022 09:38:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"property\": {\n        \"_id\": \"6356568ecf37651dd8c3c25e\",\n        \"hname\": \"Hyatt huntsville/research park\",\n        \"address\": \"6860 governors W,huntsville,AL 35806\",\n        \"city\": \"alabama\",\n        \"group\": \"hyatt\",\n        \"country\": \"US\",\n        \"productImage\": \"http://localhost:4000/uploads/hyatt2.jpg\",\n        \"createdAt\": \"2022-10-24T09:10:38.958Z\",\n        \"updatedAt\": \"2022-10-24T09:37:48.639Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/v1/property/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"property",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/v1/property/",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"property",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3601"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e11-IpBUtfF9OkB5JojooyK4zFab0rc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Oct 2022 09:25:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"property\": [\n        {\n            \"_id\": \"6356568ecf37651dd8c3c25e\",\n            \"hname\": \"hyatt house anchorage\",\n            \"address\": \"5141 business park blvd,anchorage,AK 99518\",\n            \"city\": \"alaska\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt3.jpg\",\n            \"createdAt\": \"2022-10-24T09:10:38.958Z\",\n            \"updatedAt\": \"2022-10-24T09:10:38.958Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635656c5cf37651dd8c3c261\",\n            \"hname\": \"andaz scottsdale resort & bungalows\",\n            \"address\": \"6114, N scottsdale rd, scottdale,AZ 85253\",\n            \"city\": \"arizona\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt2.jpg\",\n            \"createdAt\": \"2022-10-24T09:11:33.613Z\",\n            \"updatedAt\": \"2022-10-24T09:11:33.613Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635656fccf37651dd8c3c264\",\n            \"hname\": \"hyatt place birmingham\",\n            \"address\": \"2980 john hawkins pkwy, birmingham, AL 35244\",\n            \"city\": \"alabama\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt1.jpg\",\n            \"createdAt\": \"2022-10-24T09:12:28.315Z\",\n            \"updatedAt\": \"2022-10-24T09:12:28.315Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63565765cf37651dd8c3c267\",\n            \"hname\": \"hyatt place fairbanks\",\n            \"address\": \"400 merhar ave,fairbanks, AK 99701\",\n            \"city\": \"alaska\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt4.jpg\",\n            \"createdAt\": \"2022-10-24T09:14:13.860Z\",\n            \"updatedAt\": \"2022-10-24T09:14:13.860Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635657accf37651dd8c3c26a\",\n            \"hname\": \"hyatt house north scottdale\",\n            \"address\": \"18513 N scottdale rd,scottdale,AZ 85255\",\n            \"city\": \"arizona\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt5.jpg\",\n            \"createdAt\": \"2022-10-24T09:15:24.522Z\",\n            \"updatedAt\": \"2022-10-24T09:15:24.522Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635657fbcf37651dd8c3c26d\",\n            \"hname\": \"atlanta marriott marquis\",\n            \"address\": \"265 peachtree center avenue,NE atlanta georgia\",\n            \"city\": \"georgia\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt1.jpg\",\n            \"createdAt\": \"2022-10-24T09:16:43.155Z\",\n            \"updatedAt\": \"2022-10-24T09:16:43.155Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63565855cf37651dd8c3c270\",\n            \"hname\": \"inidianapolis marriott downtown\",\n            \"address\": \"350 west maryland street indianapolis indiana\",\n            \"city\": \"indiana\",\n            \"group\": \"marriott\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/marriot.jpg\",\n            \"createdAt\": \"2022-10-24T09:18:13.573Z\",\n            \"updatedAt\": \"2022-10-24T09:18:13.573Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63565891cf37651dd8c3c273\",\n            \"hname\": \"portland marriott city center\",\n            \"address\": \"502 dens way southwest broadway portland oregon\",\n            \"city\": \"oregon\",\n            \"group\": \"marriott\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/marriot1.jpg\",\n            \"createdAt\": \"2022-10-24T09:19:13.726Z\",\n            \"updatedAt\": \"2022-10-24T09:19:13.726Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635658d0cf37651dd8c3c276\",\n            \"hname\": \"hilton winnipeg airport suites\",\n            \"address\": \"1800 wellington avenue winnipeg,manitoba R3H1B2 canada\",\n            \"city\": \"winnipeg\",\n            \"group\": \"hilton\",\n            \"country\": \"Canada\",\n            \"productImage\": \"http://localhost:4000/uploads/download (1).jpg\",\n            \"createdAt\": \"2022-10-24T09:20:16.233Z\",\n            \"updatedAt\": \"2022-10-24T09:20:16.233Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63565919cf37651dd8c3c279\",\n            \"hname\": \"hilton whistler resort and spa\",\n            \"address\": \"4050 whistler way whistler british columbia V8E1H9 canada\",\n            \"city\": \"whistler\",\n            \"group\": \"hilton\",\n            \"country\": \"Canada\",\n            \"productImage\": \"http://localhost:4000/uploads/download (2).jpg\",\n            \"createdAt\": \"2022-10-24T09:21:29.862Z\",\n            \"updatedAt\": \"2022-10-24T09:21:29.862Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63565953cf37651dd8c3c27c\",\n            \"hname\": \"hyatt huntsville/research park\",\n            \"address\": \"6860 governors W,huntsville,AL 35806\",\n            \"city\": \"alabama\",\n            \"group\": \"hyatt\",\n            \"country\": \"US\",\n            \"productImage\": \"http://localhost:4000/uploads/hyatt2.jpg\",\n            \"createdAt\": \"2022-10-24T09:22:27.788Z\",\n            \"updatedAt\": \"2022-10-24T09:22:27.788Z\",\n            \"__v\": 0\n        }\n    ],\n    \"count\": 11\n}"
+				}
+			]
+		},
+		{
+			"name": "UPLOAD IMAGES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": "/C:/Users/pc/Desktop/WORK FILES/interview/server/public/uploads/castle1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/property/uploads",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"property",
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
